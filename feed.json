@@ -19,6 +19,14 @@
             ]
         },
         {
+            "id": "http://murasaki010.github.io/diary2411/",
+            "url": "http://murasaki010.github.io/diary2411/",
+            "title": "diary2411",
+            "date_published": "2024-11-17T16:12:43.000Z",
+            "content_html": "<h2 id=\"20241117\"><a class=\"anchor\" href=\"#20241117\">#</a> 20241117</h2>\n<p>我想看 丁同仁《常微分方程教程》，今天接触了 Poincare-Bendixson Theorem，动力系统还挺有趣的。只要给好初值，但研究者要考虑的就多了。</p>\n",
+            "tags": []
+        },
+        {
             "id": "http://murasaki010.github.io/abstract_algebra/abagr2/",
             "url": "http://murasaki010.github.io/abstract_algebra/abagr2/",
             "title": "主理想整环上的有限生成模",
