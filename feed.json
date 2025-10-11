@@ -11,7 +11,7 @@
             "url": "http://murasaki010.github.io/differential_geometry/DG1/",
             "title": "曲面的局部理论",
             "date_published": "2025-12-20T10:03:48.000Z",
-            "content_html": "<div class=\"note info\">\n<p>2025 年抽象代数课程笔记，内容基于讲义和板书。</p>\n</div>\n<h1 id=\"曲面\"><a class=\"anchor\" href=\"#曲面\">#</a> 曲面</h1>\n<blockquote>\n<p><strong>Definition：</strong></p>\n</blockquote>\n<p>\n\n\t<div class=\"row\">\n    <embed src=\"_posts/differential_geometry/1.pdf\" width=\"100%\" height=\"550\" type=\"application/pdf\">\n\t</div>\n\n\n</p>\n",
+            "content_html": "<div class=\"note info\">\n<p>2025 年抽象代数课程笔记，内容基于讲义和板书。</p>\n</div>\n<h1 id=\"曲面\"><a class=\"anchor\" href=\"#曲面\">#</a> 曲面</h1>\n<blockquote>\n<p><strong>Definition：</strong></p>\n</blockquote>\n<p>\n\n\t<div class=\"row\">\n    <embed src=\"1.pdf\" width=\"100%\" height=\"550\" type=\"application/pdf\">\n\t</div>\n\n\n</p>\n",
             "tags": [
                 "Differential Geometry",
                 "抽象代数"
