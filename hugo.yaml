@@ -5,9 +5,19 @@ theme: "PaperMod"
 
 # PaperMod 配置
 params:
-  homeInfoParams:
-    title: "Hi, I'm Yukari 👋"
-    Content: "欢迎来到我的博客"
+  profileMode:
+    enabled: true
+    title: "Hi, I'm Yukari"
+    subtitle: "Tsinghua Math · AI"
+    imageUrl: "/avatar.jpg"
+    imageTitle: "Yukari"
+    imageWidth: 160
+    imageHeight: 160
+    buttons:
+      - name: 归档
+        url: /archives/
+      - name: 搜索
+        url: /search/
   socialIcons:
     - name: github
       url: "https://github.com/murasaki010"
