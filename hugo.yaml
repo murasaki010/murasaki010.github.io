@@ -1,0 +1,35 @@
+baseURL: "https://murasaki010.github.io/"
+locale: zh-cn
+title: "Yukari's Blog"
+theme: "PaperMod"
+
+# PaperMod 配置
+params:
+  homeInfoParams:
+    title: "Hi, I'm Yukari 👋"
+    Content: "欢迎来到我的博客"
+  socialIcons:
+    - name: github
+      url: "https://github.com/murasaki010"
+
+menu:
+  main:
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 10
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+
+# 输出 HTML 和 JSON（搜索需要）
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
