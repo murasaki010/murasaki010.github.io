@@ -3570,6 +3570,9 @@ main >.inner {
 #loading {
   background-color: var(--grey-1);
 }
+body.loaded #loading {
+  display: none !important;
+}
 .cat {
   position: relative;
   display: block;
