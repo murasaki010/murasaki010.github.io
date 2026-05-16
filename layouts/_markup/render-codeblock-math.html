@@ -1,0 +1,4 @@
+{{- /* 渲染 ```math fenced 代码块为 KaTeX 显示公式 */ -}}
+<div class="math-block">
+  \[{{ .Inner | strings.TrimSpace }}\]
+</div>

@@ -3,8 +3,68 @@ locale: zh-cn
 title: "Yukari's Blog"
 theme: "PaperMod"
 
+# ========== Markdown / Goldmark 渲染配置 ==========
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        enable: true
+        quotes: "“” ‘’"
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - "\\["
+              - "\\]"
+            - - "$$"
+              - "$$"
+          inline:
+            - - '\('
+              - '\)'
+            - - "$"
+              - "$"
+    parser:
+      attribute:
+        block: true
+        title: true
+      autoHeadingID: true
+      wrapStandaloneImageWithinParagraph: false
+    renderer:
+      unsafe: true  # 允许原始 HTML（在 Markdown 中使用 <div> 等标签）
+  highlight:
+    style: dracula
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+
 # PaperMod 配置
 params:
+  # ========== Markdown 内容显示配置 ==========
+  # 数学公式渲染（每个页面可通过 front matter 的 math: true/false 单独控制）
+  math: true
+  # KaTeX 配置选项
+  katex:
+    displayMode: false
+    throwOnError: false
+    errorColor: "#cc0000"
+    trust: true
+  # PaperMod 内容显示选项
+  ShowToc: true          # 显示目录
+  ShowBreadCrumbs: true   # 显示面包屑导航
+  ShowReadingTime: true   # 显示阅读时间
+  ShowWordCount: true     # 显示字数
+  ShowPostNavLinks: true  # 显示上一篇 / 下一篇
+  ShowCodeCopyButtons: true  # 显示代码复制按钮
   profileMode:
     enabled: true
     title: "Hi, I'm Yukari"

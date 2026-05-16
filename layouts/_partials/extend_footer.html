@@ -1,0 +1,23 @@
+{{- /* 加载 KaTeX JS 并自动渲染页面中的数学公式 */}}
+{{- if (.Params.math | default site.Params.math) }}
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ],
+    throwOnError: {{ site.Params.katex.throwOnError | default false }},
+    errorColor: '{{ site.Params.katex.errorColor | default "#cc0000" }}',
+    trust: {{ site.Params.katex.trust | default true }},
+    macros: {
+      '\\R': '\\mathbb{R}',
+      '\\N': '\\mathbb{N}',
+      '\\C': '\\mathbb{C}',
+      '\\Z': '\\mathbb{Z}',
+      '\\Q': '\\mathbb{Q}'
+    }
+  });"></script>
+{{- end }}

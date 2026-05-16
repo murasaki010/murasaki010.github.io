@@ -1,0 +1,30 @@
+{{- /* 加载 KaTeX CSS — 用于数学公式渲染 */}}
+{{- if (.Params.math | default site.Params.math) }}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" as="style" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" as="script" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" as="script" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin>
+<style>
+  /* KaTeX 公式在暗色模式下的适配 */
+  .katex { font-size: 1.05em; }
+  .katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.5em 0; }
+  /* 公式换行支持 */
+  .katex-display > .katex { max-width: 100%; }
+  .katex-display > .katex > .katex-html { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+  /* 行内公式垂直对齐 */
+  .katex { vertical-align: -0.15em; }
+  /* 图片自适应 */
+  .post-content img { max-width: 100%; height: auto; }
+  /* 表格自适应 */
+  .post-content table { display: block; overflow-x: auto; white-space: nowrap; }
+  @media (min-width: 768px) {
+    .post-content table { white-space: normal; }
+  }
+  /* 任务列表（Checkbox）样式 */
+  .post-content ul.task-list { list-style: none; padding-left: 0; }
+  .post-content ul.task-list li input[type="checkbox"] { margin-right: 0.5em; }
+  /* 脚注样式 */
+  .footnotes { font-size: 0.85em; color: var(--secondary); border-top: 1px solid var(--border); margin-top: 2em; padding-top: 1em; }
+</style>
+{{- end }}
